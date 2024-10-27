@@ -4,7 +4,8 @@ description: >-
   Research Portfolio and Professional Profile of Nafiul
 baseurl: "" # the subpath of your site if applicable
 url: "https://nafiul9.github.io"
-repository: nafiul9/nafiul9.github.io  # Add this line
+favicon: /assets/images/favicon.ico  # Add this line here
+repository: nafiul9/nafiul9.github.io
 
 # Build settings
 remote_theme: pages-themes/minimal@v0.2.0
