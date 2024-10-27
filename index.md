@@ -11,17 +11,13 @@ title: Home
   </div>
 </nav>
 
-<div style="display: flex; align-items: start; gap: 20px; margin: 20px 0;">
-  <div style="width: 180px; flex-shrink: 0;">
-    <img src="/assets/images/profile/profile.jpg" alt="Profile Photo" 
-         style="width: 180px; height: 180px; object-fit: cover; 
-                border-radius: 50%; border: 3px solid #003D7D; 
-                box-shadow: 0 3px 15px rgba(0,61,125,0.2);">
-  </div>
+<div class="profile-container">
+  <img src="/assets/images/profile/profile.jpg" alt="Profile Photo" class="profile-image">
   <div>
     <h1>Welcome to My Research Portfolio</h1>
-    <p style="font-size: 1.2em; color: #003D7D;">
-      Ph.D. Candidate in Biological Sciences<br>
+    <p class="highlight-text">
+      Ph.D. Candidate<br>
+      Department of Biological Sciences<br>
       Auburn University
     </p>
   </div>
@@ -29,33 +25,39 @@ title: Home
 
 <div class="section-card">
   <h2>Current Research</h2>
-  <p class="highlight-text">
-    I am investigating the complex interactions between genetics and hormone signaling in sexual dimorphism using <em>Drosophila melanogaster</em> as a model organism at Auburn University's Department of Biological Sciences.
-  </p>
+  <div class="highlight-box">
+    I am investigating the complex interactions between genetics and hormone signaling in sexual dimorphism using <em>Drosophila melanogaster</em> as a model organism.
+  </div>
 </div>
 
-<div class="research-section">
+<div class="section-card">
   <h2>Research Focus Areas</h2>
   <div class="research-grid">
     <div class="research-item">
       <span class="research-icon"></span>
       <h3>Quantitative Genetics</h3>
-      <p>Investigating the genetic basis of sexual dimorphism in <em>Drosophila melanogaster</em>.</p>
+      <p>Investigating genetic basis of sexual dimorphism in <em>Drosophila melanogaster</em>.</p>
+      <span class="tag">Genetics</span>
+      <span class="tag">Analysis</span>
     </div>
     <div class="research-item">
       <span class="research-icon"></span>
       <h3>Molecular Genetics</h3>
-      <p>Studying molecular mechanisms underlying hormone signaling and regulatory variation.</p>
+      <p>Studying molecular mechanisms of hormone signaling and regulatory variation.</p>
+      <span class="tag">Molecular Biology</span>
+      <span class="tag">Signaling</span>
     </div>
     <div class="research-item">
       <span class="research-icon"></span>
       <h3>Hormone Signaling</h3>
-      <p>Examining the impact of endocrine disruptors on hormone signaling pathways.</p>
+      <p>Examining endocrine disruptors impact on hormone signaling pathways.</p>
+      <span class="tag">Endocrinology</span>
+      <span class="tag">Pathways</span>
     </div>
   </div>
 </div>
 
-<div class="impact-section">
+<div class="section-card">
   <h2>Research Impact</h2>
   <ul class="impact-list">
     <li>Understanding fundamental mechanisms of sexual dimorphism</li>
@@ -65,7 +67,7 @@ title: Home
   </ul>
 </div>
 
-<div class="quick-links">
+<div class="section-card">
   <h2>Quick Links</h2>
   <div class="links-container">
     <a href="/publications" class="link-button"> Publications</a>
