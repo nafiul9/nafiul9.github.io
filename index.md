@@ -3,29 +3,29 @@ layout: default
 title: Home
 ---
 
-# Welcome
+# Welcome to My Research Portfolio
 
-I am a researcher and professional focused on [Your Field]. This portfolio showcases my research work and professional achievements.
+## Research Focus
+Brief introduction about your main research areas and interests. What drives your academic curiosity?
 
-## Research Interests
-
-- Interest 1
-- Interest 2
-- Interest 3
-
-## Featured Projects
-
+## Current Projects
 ### Project 1
-Brief description of your first major project or research work.
+Short description of your current major research project.
 
 ### Project 2
-Brief description of your second major project or research work.
+Description of another ongoing project or research interest.
 
-## Publications
+## Recent Highlights
+- **Latest Publication**: Brief mention of your most recent paper
+- **Recent Award**: Any recent recognition or achievement
+- **Current Work**: What you're currently working on
 
-1. Author(s) (Year). "Title of Paper," Journal Name, Vol(Issue), pp.
-2. Author(s) (Year). "Title of Paper," Conference Name, Location.
+## Quick Links
+- [View My Publications](/publications)
+- [Learn More About Me](/about)
+- [Research Gate Profile](#)
+- [Google Scholar Profile](#)
 
-## Contact
-
-Feel free to reach out to me at [your professional email] or connect with me on [LinkedIn/other professional networks].
+## News
+- **[Date]**: Recent news item about your work
+- **[Date]**: Another recent achievement or update

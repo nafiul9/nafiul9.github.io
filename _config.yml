@@ -2,10 +2,16 @@ title: Nafiul's Portfolio
 email: your-email@example.com
 description: >- 
   Research Portfolio and Professional Profile of Nafiul
-baseurl: "" # the subpath of your site if applicable
+baseurl: "" 
 url: "https://nafiul9.github.io"
-favicon: /assets/images/favicon.ico  # Add this line here
+favicon: /assets/images/favicon.ico
 repository: nafiul9/nafiul9.github.io
+
+# Navigation
+header_pages:
+  - index.md
+  - publications.md
+  - about.md
 
 # Build settings
 remote_theme: pages-themes/minimal@v0.2.0
