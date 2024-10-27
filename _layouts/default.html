@@ -4,35 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ site.title }}</title>
-    <meta name="description" content="{{ site.description }}">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- React and ReactDOM -->
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    
-    <!-- Babel for JSX -->
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    
-    <!-- Your custom styles -->
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    {% seo %}
 </head>
 <body>
-    <div id="root"></div>
-    
-    <!-- Your React component -->
-    <script type="text/babel" src="{{ "/assets/js/portfolio.js" | relative_url }}"></script>
-    
-    <script type="text/babel">
-        ReactDOM.render(
-            <Portfolio />,
-            document.getElementById("root")
-        );
-    </script>
+    <div class="wrapper">
+        <header>
+            <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
+            <p>{{ site.description }}</p>
+        </header>
+        <section>
+            {{ content }}
+        </section>
+    </div>
 </body>
 </html>
