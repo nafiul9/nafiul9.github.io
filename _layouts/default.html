@@ -4,72 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ site.title }}</title>
-    
-    <!-- React and other dependencies -->
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    
-    <!-- Add Lucide Icons -->
-    <script src="https://unpkg.com/@lucide/react"></script>
-    
-    <!-- Your custom styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
     <style>
-        body {
+        * {
             margin: 0;
             padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            box-sizing: border-box;
         }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
         }
+
         .header {
             background: white;
-            padding: 1rem;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+            margin-bottom: 2rem;
         }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
         .nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        .nav-links a {
-            margin-left: 20px;
-            color: #666;
+
+        .nav-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2d3748;
             text-decoration: none;
         }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #4a5568;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
         .nav-links a:hover {
-            color: #000;
+            color: #2d3748;
+        }
+
+        .main {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            color: #1a202c;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #2d3748;
+            margin: 2rem 0 1rem;
+        }
+
+        p {
+            color: #4a5568;
+            margin-bottom: 1rem;
+        }
+
+        .content-section {
+            margin-bottom: 2rem;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: #718096;
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
         }
     </style>
 </head>
 <body>
-    <div id="root"></div>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="/" class="nav-title">{{ site.title }}</a>
+                <div class="nav-links">
+                    <a href="/">Home</a>
+                    <a href="/publications">Publications</a>
+                    <a href="/about">About</a>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-    <script>
-        const Portfolio = () => {
-            return React.createElement('div', { className: 'container' },
-                React.createElement('header', { className: 'header' },
-                    React.createElement('nav', { className: 'nav' },
-                        React.createElement('h1', null, "Nafiul's Portfolio"),
-                        React.createElement('div', { className: 'nav-links' },
-                            React.createElement('a', { href: '/' }, 'Home'),
-                            React.createElement('a', { href: '/publications' }, 'Publications'),
-                            React.createElement('a', { href: '/about' }, 'About')
-                        )
-                    )
-                ),
-                React.createElement('main', null,
-                    React.createElement('h1', null, 'Welcome to My Research Portfolio'),
-                    React.createElement('p', null, 'Exploring the intersections of research, innovation, and academic excellence'),
-                    {{ content }}
-                )
-            );
-        };
+    <main class="container">
+        <div class="main">
+            {{ content }}
+        </div>
+    </main>
 
-        const root = ReactDOM.createRoot(document.getElementById('root'));
-        root.render(React.createElement(Portfolio));
-    </script>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. Hosted on GitHub Pages.</p>
+        </div>
+    </footer>
 </body>
 </html>
