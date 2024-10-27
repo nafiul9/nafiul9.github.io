@@ -1,20 +1,13 @@
 title: Nafiul's Portfolio
 email: your-email@example.com
-description: >- 
-  Research Portfolio and Professional Profile of Nafiul
+description: Research Portfolio and Professional Profile of Nafiul
 baseurl: "" 
 url: "https://nafiul9.github.io"
 favicon: /assets/images/favicon.ico
 repository: nafiul9/nafiul9.github.io
 
-# Navigation
-header_pages:
-  - index.md
-  - publications.md
-  - about.md
-
 # Build settings
-remote_theme: pages-themes/minimal@v0.2.0
+markdown: kramdown
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
@@ -26,3 +19,7 @@ exclude:
   - node_modules
   - vendor
   - .gitignore
+
+# Custom settings
+author: Nafiul
+github_username: nafiul9
