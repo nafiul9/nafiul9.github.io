@@ -5,30 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ site.title }}</title>
     
-    <!-- Add React and other dependencies -->
-    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- React and other dependencies -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Add Lucide Icons -->
+    <script src="https://unpkg.com/@lucide/react"></script>
     
     <!-- Your custom styles -->
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-    {% seo %}
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background: white;
+            padding: 1rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-links a {
+            margin-left: 20px;
+            color: #666;
+            text-decoration: none;
+        }
+        .nav-links a:hover {
+            color: #000;
+        }
+    </style>
 </head>
 <body>
-    <div id="root">
-        {{ content }}
-    </div>
-    
-    <!-- Your React component -->
-    <script type="text/babel" src="{{ "/assets/js/portfolio.js" | relative_url }}"></script>
-    <script type="text/babel">
-        ReactDOM.render(
-            React.createElement(Portfolio),
-            document.getElementById("root")
-        );
+    <div id="root"></div>
+
+    <script>
+        const Portfolio = () => {
+            return React.createElement('div', { className: 'container' },
+                React.createElement('header', { className: 'header' },
+                    React.createElement('nav', { className: 'nav' },
+                        React.createElement('h1', null, "Nafiul's Portfolio"),
+                        React.createElement('div', { className: 'nav-links' },
+                            React.createElement('a', { href: '/' }, 'Home'),
+                            React.createElement('a', { href: '/publications' }, 'Publications'),
+                            React.createElement('a', { href: '/about' }, 'About')
+                        )
+                    )
+                ),
+                React.createElement('main', null,
+                    React.createElement('h1', null, 'Welcome to My Research Portfolio'),
+                    React.createElement('p', null, 'Exploring the intersections of research, innovation, and academic excellence'),
+                    {{ content }}
+                )
+            );
+        };
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(React.createElement(Portfolio));
     </script>
 </body>
 </html>
