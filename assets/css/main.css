@@ -9,11 +9,11 @@ body {
     background-color: #f8f9fa;
 }
 
-/* Profile section */
+/* Profile section - adjusted for oval shape */
 .profile-section {
     display: flex;
-    align-items: center;
-    margin-bottom: 3rem;
+    align-items: flex-start;
+    margin-bottom: 2rem;
     gap: 2rem;
     background: white;
     padding: 2rem;
@@ -23,12 +23,13 @@ body {
 
 .profile-image {
     flex-shrink: 0;
+    width: 180px;
 }
 
 .profile-photo {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    width: 180px;
+    height: 240px;
+    border-radius: 90px / 120px;
     object-fit: cover;
     border: 3px solid #fff;
     box-shadow: 0 3px 6px rgba(0,0,0,0.2);
@@ -36,6 +37,13 @@ body {
 
 .profile-content {
     flex-grow: 1;
+    padding-top: 1rem;
+}
+
+.profile-content h1 {
+    margin-top: 0;
+    font-size: 2.2em;
+    color: #2c3e50;
 }
 
 .lead {
@@ -44,7 +52,7 @@ body {
     margin: 1rem 0;
 }
 
-/* Research cards */
+/* Research grid */
 .research-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -64,6 +72,12 @@ body {
     transform: translateY(-5px);
 }
 
+.research-card h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+/* Research highlight */
 .research-highlight {
     background: #e3f2fd;
     padding: 1.5rem;
@@ -100,7 +114,7 @@ body {
     left: 0;
 }
 
-/* Recent work section */
+/* Recent work */
 .recent-work {
     background: #fff3e0;
     padding: 1.5rem;
@@ -110,6 +124,10 @@ body {
 }
 
 /* Quick links */
+.quick-links {
+    margin-top: 3rem;
+}
+
 .links-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -133,15 +151,91 @@ body {
     color: #1976d2;
 }
 
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    line-height: 1.2;
+}
+
+h1 { font-size: 2.5em; margin-bottom: 0.5em; }
+h2 { font-size: 2em; margin-top: 1.5em; margin-bottom: 0.75em; }
+h3 { font-size: 1.5em; margin-bottom: 0.5em; }
+
+/* Links */
+a {
+    color: #1976d2;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #1565c0;
+    text-decoration: underline;
+}
+
+/* Emphasis and italic text */
+em, i {
+    color: #2c3e50;
+    font-style: italic;
+}
+
+/* Code blocks */
+code {
+    background-color: #f6f8fa;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 85%;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
     .profile-section {
         flex-direction: column;
+        align-items: center;
         text-align: center;
     }
     
     .profile-photo {
-        width: 150px;
-        height: 150px;
+        width: 140px;
+        height: 180px;
+        border-radius: 70px / 90px;
+    }
+    
+    .profile-image {
+        width: 140px;
+    }
+
+    .research-grid {
+        grid-template-columns: 1fr;
+    }
+
+    h1 { font-size: 2em; }
+    h2 { font-size: 1.75em; }
+    h3 { font-size: 1.25em; }
+}
+
+/* Print styles */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+
+    .profile-section,
+    .research-card,
+    .impact-list,
+    .recent-work {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+
+    .link-card {
+        box-shadow: none;
+        border: 1px solid #ddd;
     }
 }
