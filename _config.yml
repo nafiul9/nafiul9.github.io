@@ -1,18 +1,26 @@
-title: Nafiul's Portfolio
-description: Research Portfolio and Professional Profile of Nafiul
+title: Research Portfolio
+email: your.email@auburn.edu
+description: >- 
+  Ph.D. Candidate in Biological Sciences at Auburn University, 
+  studying quantitative genetics and hormone signaling in Drosophila melanogaster.
 baseurl: "" 
 url: "https://nafiul9.github.io"
+favicon: /assets/images/favicon.ico
+github_username: nafiul9
 
-# Theme settings
-remote_theme: pages-themes/minimal@v0.2.0
+# Navigation
+header_pages:
+  - index.md
+  - publications.md
+  - about.md
 
 # Build settings
-markdown: kramdown
+remote_theme: pages-themes/minimal@v0.2.0
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
 
-# Exclude files
+# Exclude directories and files
 exclude:
   - Gemfile
   - Gemfile.lock

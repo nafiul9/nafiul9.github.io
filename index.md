@@ -5,41 +5,32 @@ title: Home
 
 # Welcome to My Research Portfolio
 
-<div class="section-card">
-## Research Focus
+## Current Research
+I am a Ph.D. candidate in the Department of Biological Sciences at Auburn University. My research focuses on understanding the complex interactions between genetics and hormone signaling in sexual dimorphism using *Drosophila melanogaster* as a model organism.
 
-- **Machine Learning & AI**: Developing novel approaches to computer vision and natural language processing
-- **Data Science**: Statistical analysis and predictive modeling of complex datasets
-- **Software Engineering**: Building scalable and efficient systems
-</div>
+## Research Focus Areas
 
-<div class="section-card">
-## Current Projects
+### Quantitative Genetics of Sexually Dimorphic Traits
+Investigating the genetic basis of sexual dimorphism in *Drosophila melanogaster*, focusing on how genetic variations contribute to sex-specific trait development.
 
-### Deep Learning for Computer Vision
-Developing innovative neural network architectures for image recognition and object detection, with applications in autonomous systems.
+### Molecular Genetics and Gene Regulation
+Studying the molecular mechanisms underlying hormone signaling and regulatory variation, with particular emphasis on genes involved in sexual differentiation.
 
-### Natural Language Processing
-Working on advanced language models for text understanding and generation, focusing on improving context awareness and semantic comprehension.
-</div>
+### Hormone Signaling Research
+Examining the impact of endocrine disruptors on hormone signaling pathways and their effects on sexual dimorphism in *Drosophila melanogaster*.
 
-<div class="section-card">
-## Skills & Expertise
+## Research Impact
+This research contributes to our understanding of:
+- Fundamental mechanisms of sexual dimorphism
+- Hormone signaling pathways and their regulation
+- Effects of environmental factors on endocrine systems
+- Genetic basis of sex-specific trait development
 
-<span class="badge">Python</span>
-<span class="badge">TensorFlow</span>
-<span class="badge">PyTorch</span>
-<span class="badge">Machine Learning</span>
-<span class="badge">Deep Learning</span>
-<span class="badge">Computer Vision</span>
-<span class="badge">NLP</span>
-</div>
+## Recent Work
+Currently investigating how endocrine disruptors impact hormone signaling pathways and contribute to changes in sexually dimorphic traits, combining approaches from quantitative genetics, molecular biology, and endocrinology.
 
-<div class="section-card">
-## Recent Publications
-
-1. **[Your Latest Paper Title]** in Journal of Machine Learning, 2024
-   - Brief description of the key findings and impact
-2. **[Another Paper Title]** at International Conference on AI, 2023
-   - Overview of the research contribution
-</div>
+## Quick Links
+- [View Publications](/publications)
+- [About Me](/about)
+- [GitHub Profile](https://github.com/nafiul9)
+- [Research Gate Profile](#)

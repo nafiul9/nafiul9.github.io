@@ -1,5 +1,25 @@
 ---
 layout: default
-title: publications
+title: Publications
 ---
----  # Publications  ## Journal Articles  1. [Author List Including You] (Year). "Title of Paper"    *Journal Name*, Volume(Issue), pp. XX-XX.    [DOI: link]  ## Conference Papers  1. [Author List Including You] (Year). "Title of Paper"    *Conference Name*, Location.    [Link to paper if available]  ## Preprints  1. [Author List Including You] (Year). "Title of Paper"    arXiv:XXXX.XXXXX  ## Research Projects  ### Project Name 1 Brief description of the project, its goals, and outcomes.  ### Project Name 2 Brief description of the project, its goals, and outcomes.
+
+# Publications and Research
+
+## Current Research Projects
+
+### Hormone Signaling and Sexual Dimorphism
+Investigating the fundamental aspects of sex dimorphism in hormone signaling and its interaction with endocrine disruptors in *Drosophila melanogaster*.
+
+### Quantitative Genetics Analysis
+Studying the genetic architecture of sexually dimorphic traits and their response to environmental factors.
+
+## Publications
+[List your publications here]
+
+## Conference Presentations
+[List your conference presentations here]
+
+## Research Contributions
+- Development of new approaches for analyzing hormone signaling pathways
+- Investigation of genetic factors influencing sexual dimorphism
+- Analysis of endocrine disruptor effects on developmental processes
